@@ -1,0 +1,7 @@
+pip install ccxt
+pip install panda
+pip install time 
+import ccxt
+import panda as pd
+Binance=ccxt.binance
+kline=Binance.fetch.ohlcv.data('symbol'=btc/usdt,'since'=1500) 
